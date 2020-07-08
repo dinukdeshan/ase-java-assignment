@@ -13,7 +13,7 @@ public interface roleService {
 	//GET Request services
 	public Role getRoleById(String id);
 	public Role getRoleByNicNo(String nicNo);
-	public List<Role> getByRoleType(String roleType);
+	//public List<Role> getByRoleType(String roleType);
 	public List<Role> getByOrganizationAndRoleType(String organization, String roleType);
 	
 	//Update Request Service
