@@ -11,7 +11,7 @@ import com.mongoCrud.asgn.model.Role;
 @Repository
 public interface RoleRepository extends MongoRepository<Role, String> {
 	//find by roleType
-	public List<Role> findByRoleType(String roleType);
+	//public List<Role> findByRoleType(String roleType);
 		
 	//find by nicNO
 	public Role findByNicNo(String nicNo); 
