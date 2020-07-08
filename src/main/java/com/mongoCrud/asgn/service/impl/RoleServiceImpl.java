@@ -42,10 +42,10 @@ public class RoleServiceImpl implements roleService {
 	}
 	
 	//Get documents based on the Role Type
-	@Override
-	public List<Role> getByRoleType(String roleType){
-		return roleRepository.findByRoleType(roleType);
-	}
+//	@Override
+//	public List<Role> getByRoleType(String roleType){
+//		return roleRepository.findByRoleType(roleType);
+//	}
 	
 	//Get documents based on Organization and Role Type
 	@Override
