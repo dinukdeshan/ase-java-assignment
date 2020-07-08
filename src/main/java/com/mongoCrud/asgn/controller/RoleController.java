@@ -32,6 +32,7 @@ public class RoleController {
         return new ResponseEntity<>(roleService.createRole(role), HttpStatus.CREATED);
     }
 	
+	//-----------------------------------------------------------------------------------
 	//Retrieve
 	@GetMapping(value="/")
 	@ResponseStatus(HttpStatus.OK)
@@ -47,11 +48,11 @@ public class RoleController {
 	}
 		
 	//Retrieve by Role Type
-	@GetMapping(value="/roleType/{roleType}")
-	@ResponseStatus(HttpStatus.OK)
-	public ResponseEntity<List<Role>> getRole(@PathVariable("roleType") String roleType){
-		return new ResponseEntity<>(roleService.getByRoleType(roleType), HttpStatus.OK);
-	}
+//	@GetMapping(value="/roleType/{roleType}")
+//	@ResponseStatus(HttpStatus.OK)
+//	public ResponseEntity<List<Role>> getRole(@PathVariable("roleType") String roleType){
+//		return new ResponseEntity<>(roleService.getByRoleType(roleType), HttpStatus.OK);
+//	}
 	
 	//Retrieve by NIC no
 	@GetMapping(value="/nicNo/{nicNo}")
